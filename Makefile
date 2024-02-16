@@ -4,7 +4,7 @@ LD_FLAGS:=
 BUILD_TARGET:=debug
 
 ODIR    := build
-BIN     := msghide
+BIN     := steglsb
 SRCS_C  := $(wildcard src/*.c) $(wildcard src/**/*.c)
 OBJECTS := $(SRCS_C:.c=.o)
 OBJECTS := $(patsubst %,$(ODIR)/%,$(OBJECTS))
@@ -20,9 +20,7 @@ $(error Invalid Build Target: "$(BUILD_TARGET)")
 	endif
 endif
 
-ifeq ($(OS),Windows_NT)
-	BIN=msghide.exe
-else
+ifneq ($(OS),Windows_NT)
 	# Possible Values Like "Linux" & "Darwin"
 	UNAME_S:=$(shell uname -s)
 

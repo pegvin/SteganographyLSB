@@ -1,4 +1,4 @@
-# MsgHide
+# SteganographyLSB
 Hide Text in Images using LSB Stegnography Technique
 
 ---
@@ -33,7 +33,7 @@ so a HD image taken from a smart phone has a resolution of `1080x1920` which mea
 ## Usage
 
 ```
-Usage: ./msghide encode/decode [arguments]
+Usage: ./steglsb encode/decode [arguments]
 
 [arguments]
    <filename>  Input File To encode/decode message into/from
