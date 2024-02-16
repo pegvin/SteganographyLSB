@@ -18,7 +18,7 @@ int32_t DecodeImage(const char* filePath);
 
 int main(int argc, char** argv) {
 	if (argc < 2) {
-		printf("Usage: %s encode/decode [arguments]\n\n[arguments]\n   <filename>  Input File To encode/decode message into/from\n   <message>  If Encoding, A Message To Encode Is REQUIRED\n", argv[0]);
+		printf("Usage: %s encode/decode [arguments]\n\n[arguments]\n   <filename>  Input File To encode/decode message into/from\n   <message>   If Encoding, A Message To Encode Is REQUIRED\n", argv[0]);
 		return 1;
 	}
 
