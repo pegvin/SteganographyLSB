@@ -1,8 +1,8 @@
 # MsgHide
-Hide Text In Images Using LSB Stegnography Technique
+Hide Text in Images using LSB Stegnography Technique
 
 ---
-## About LSB Stegnography Technique
+## About LSB Stegnography
 Computers are basically rocks trained to flip switches, a single switch can represent their state in either ON or OFF, i.e. 1 or 0 condition.
 
 These switches are also known as `Bits`, 1 single `bit` can store only 2 values, a 0 or a 1 but when we put together 8 of these bits together we can suddenly represent 256 different values, this is known as a `byte`. a single `byte` can store 8 `bits`.
@@ -41,8 +41,5 @@ Usage: ./msghide encode/decode [arguments]
 ```
 
 ---
-## License
-this project is Licensed under [BSD 3-Clause License](./LICENSE)
-
----
 # Thanks
+
