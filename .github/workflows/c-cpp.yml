@@ -11,7 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
-    - uses: actions/checkout@v3
+      uses: actions/checkout@v3
 
     - name: make
       run: make
+
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: linux-x64
+        path: ./msghide
+        if-no-files-found: error
